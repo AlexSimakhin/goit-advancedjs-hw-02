@@ -84,9 +84,11 @@ function convertMs(ms) {
   const day = hour * 24;
 
   const days = Math.floor(ms / day);
-  const hours = Math.floor((ms % day) / hour);
-  const minutes = Math.floor(((ms % day) % hour) / minute);
-  const seconds = Math.floor((((ms % day) % hour) % minute) / second);
+  const remainderAfterDays = ms % day;
+  const hours = Math.floor(remainderAfterDays / hour);
+  const remainderAfterHours = remainderAfterDays % hour;
+  const minutes = Math.floor(remainderAfterHours / minute);
+  const seconds = Math.floor((remainderAfterHours % minute) / second);
 
   return { days, hours, minutes, seconds };
 }
