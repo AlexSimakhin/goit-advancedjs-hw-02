@@ -15,6 +15,26 @@
 
     <main>
       <div class="container my-4">
+        <form class="form snackbar-form">
+          <label>
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+        
+          <fieldset>
+            <legend>State</legend>
+            <label class="radio-fulfilled">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="radio-rejected">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+        
+          <button type="submit">Create notification</button>
+        </form>        
       </div>
     </main>
 
