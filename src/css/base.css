@@ -47,7 +47,10 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font: inherit;
   color: inherit;
   letter-spacing: inherit;
