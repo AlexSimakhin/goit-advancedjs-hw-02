@@ -1,10 +1,10 @@
-import flatpickr from "flatpickr";
+import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
 
-import "flatpickr/dist/flatpickr.min.css";
+import 'flatpickr/dist/flatpickr.min.css';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const startButton = document.querySelector("[data-start]");
+const startButton = document.querySelector('[data-start]');
 const daysSpan = document.querySelector('[data-days]');
 const hoursSpan = document.querySelector('[data-hours]');
 const minutesSpan = document.querySelector('[data-minutes]');
@@ -28,19 +28,39 @@ flatpickr.localize({
   },
   months: {
     shorthand: [
-      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
     ],
     longhand: [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December',
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
     ],
   },
   firstDayOfWeek: 1,
 });
 
-const picker = flatpickr("#datetime-picker", {
-  dateFormat: "Y-m-d H:i",
+const picker = flatpickr('#datetime-picker', {
+  dateFormat: 'Y-m-d H:i',
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),

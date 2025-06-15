@@ -21,8 +21,10 @@
       &:hover {
         border-color: rgba(0, 0, 0, 1);
       }
-  
-      &:focus, &:focus-visible, &:focus-within {
+
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
         outline: none;
         color: rgba(0, 0, 0, 1);
         border-color: rgba(78, 117, 255, 1);
@@ -45,7 +47,8 @@
       border-color: rgba(0, 0, 0, 1);
     }
 
-    &:focus, &:focus-visible {
+    &:focus,
+    &:focus-visible {
       outline: none;
       color: rgba(0, 0, 0, 1);
       border-color: rgba(78, 117, 255, 1);
