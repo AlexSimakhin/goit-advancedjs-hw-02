@@ -15,6 +15,30 @@
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
+
+  &.center {
+    justify-content: center;
+  }
+  &.custom-view {
+    position: absolute;
+    inset: 0;
+
+    .nav-item {
+      padding: 10px 20px;
+      text-align: center;
+      border: 2px solid rgba(255, 140, 0, 0.3);
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      
+      &:hover {
+      background-color: rgba(255, 157, 0, 0.2);
+      color: #ff8400;
+      }
+    }
+  }
 }
 .nav-link {
   position: relative;
